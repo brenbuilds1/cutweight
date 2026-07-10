@@ -1,0 +1,6 @@
+{
+  "name": "cutweight",
+  "description": "Cut your agent's token weight: weigh in, read the bill, cut the output, cap the thinking, keep sessions lean.",
+  "version": "1.0.0",
+  "author": { "name": "Bren Builds" }
+}

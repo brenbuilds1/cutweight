@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Diet"
+  short_description: "Read the bill for your installed skills."
+  default_prompt: "Use Skill Diet: measure the always-on and on-trigger context cost of every installed skill, find trigger overlap plus dead skills, and produce a keep/trim/cut list with measured numbers. Do not delete anything."

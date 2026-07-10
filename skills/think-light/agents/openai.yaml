@@ -1,0 +1,4 @@
+interface:
+  display_name: "Think Light"
+  short_description: "Light tasks, light thinking."
+  default_prompt: "Use Think Light: sort my recurring tasks into light and heavy piles, cap thinking budgets on the light pile, and set up the verification runs that prove quality held before the caps stay."

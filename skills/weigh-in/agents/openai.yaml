@@ -1,0 +1,4 @@
+interface:
+  display_name: "Weigh-In"
+  short_description: "Weigh your agent, get the fight card."
+  default_prompt: "Use Weigh-In: measure my always-on context bill (skills, memory files, MCP schemas), assign my weight class, print the card, and show the delta from my last weigh-in."

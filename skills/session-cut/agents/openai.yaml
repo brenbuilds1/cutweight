@@ -1,0 +1,4 @@
+interface:
+  display_name: "Session Cut"
+  short_description: "Cut the session before the context wins."
+  default_prompt: "Use Session Cut: judge whether this session should continue, compact, or reset. Check the tells, and if it is time to cut, write the five-line handoff note before the clear."

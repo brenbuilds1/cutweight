@@ -1,0 +1,11 @@
+{
+  "name": "cutweight",
+  "owner": { "name": "Bren Builds" },
+  "plugins": [
+    {
+      "name": "cutweight",
+      "source": "./",
+      "description": "Five skills that cut your agent's token weight: weigh-in, skill-diet, word-diet, think-light, session-cut."
+    }
+  ]
+}
