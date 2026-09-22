@@ -62,7 +62,8 @@ Path: [`skills/cutweight-cut/SKILL.md`](./skills/cutweight-cut/SKILL.md)
 
 [cutweight-bench](https://github.com/brenbuilds1/cutweight-bench) runs
 caveman, ponytail, and the cutweight dial on the same tasks and models in
-a container, pinned and pre-registered, every run file public. Pilot
+a container with nothing else installed, pinned to commits, pre-registered
+before the first run, every run file public. Pilot
 result (Sonnet 5 and GPT-5.6 Luna, 24 runs, all tasks passed): caveman
 cut output tokens 27% and 18% against no skill; the cutweight dial did
 not, at 3% and 27% more. The dial stays because the live-round rule is
