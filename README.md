@@ -11,54 +11,50 @@ fills: wrong tools get picked, instructions get forgotten, long sessions
 degrade. Dead weight costs accuracy first, quota second, money a distant
 third.
 
-cutweight is five skills that cut it. Weigh in first. Cut. Weigh in again.
-Post your card.
+cutweight is one dial and three tools. Weigh in first. Cut. Weigh in
+again. Post your card.
 
-## The Skills
+## The Dial
 
-### Weigh-In
+### cutweight
 
-The scale. Measures your always-on bill (skills, memory files, MCP schemas),
-assigns your weight class from flyweight to superheavyweight, prints a
-shareable fight card, and tracks the delta against your last weigh-in in an
-append-only log.
+`/cutweight light | full | ultra | off`. One setting for the two things
+billed on every message: the words in the reply and the thinking behind
+it. Answers like a cornerman between rounds, keeps commands, code, file paths,
+and error strings exact, caps thinking on light tasks only after verifying
+quality held, and checks the live round before calling a fact that may
+have changed.
 
-Path: [`skills/weigh-in/SKILL.md`](./skills/weigh-in/SKILL.md)
+Path: [`skills/cutweight/SKILL.md`](./skills/cutweight/SKILL.md)
 
-### Skill Diet
+## The Tools
 
-Reads the whole bill: what every installed skill, memory file, and MCP server
-costs always-on and on-trigger, which skills fight over the same triggers,
-which never run. Hands you a keep/trim/cut table. Deletes nothing.
+### cutweight-weigh
 
-Path: [`skills/skill-diet/SKILL.md`](./skills/skill-diet/SKILL.md)
+The scale. Measures your always-on bill (skills, memory files, MCP
+schemas), assigns your weight class from flyweight to superheavyweight,
+prints a shareable fight card, and tracks the delta against your last
+weigh-in in an append-only log.
 
-### Word Diet
+Path: [`skills/cutweight-weigh/SKILL.md`](./skills/cutweight-weigh/SKILL.md)
 
-Puts the agent's replies on a diet. Answers like a cornerman between rounds:
-zero filler, only what changes the next round, while the technical content
-stays exact: commands, code, errors, citations. When facts are fresh or
-likely to change, it checks the live round instead of calling it from old
-tape.
+### cutweight-diet
 
-Path: [`skills/word-diet/SKILL.md`](./skills/word-diet/SKILL.md)
+Reads the whole bill: what every installed skill, memory file, and MCP
+server costs always-on and on-trigger, which skills fight over the same
+triggers, which never run. Hands you a keep/trim/cut table. Deletes
+nothing.
 
-### Think Light
+Path: [`skills/cutweight-diet/SKILL.md`](./skills/cutweight-diet/SKILL.md)
 
-Light tasks, light thinking. Sorts your tasks into light and heavy piles,
-caps thinking budgets on the light pile, and only keeps a cap after
-verifying on real tasks that quality held. Never caps blind.
-
-Path: [`skills/think-light/SKILL.md`](./skills/think-light/SKILL.md)
-
-### Session Cut
+### cutweight-cut
 
 Cuts the session before the context wins. One task per session, /clear
 between tasks, /compact only to continue the same one, a five-line handoff
 note before every reset, and the tells that say the context is now working
 against you.
 
-Path: [`skills/session-cut/SKILL.md`](./skills/session-cut/SKILL.md)
+Path: [`skills/cutweight-cut/SKILL.md`](./skills/cutweight-cut/SKILL.md)
 
 ## Install
 
@@ -80,8 +76,16 @@ Manual: copy folders under `skills/` into your agent's skills directory.
 `~/.claude/skills/`.
 
 ```sh
-cp -R skills/weigh-in ~/.claude/skills/
+cp -R skills/cutweight ~/.claude/skills/
 ```
+
+## Renamed in 2.0
+
+Every command now carries the brand, so the family reads as one thing in
+hosts without namespaces: `skill-diet` is `cutweight-diet`, `weigh-in` is
+`cutweight-weigh`, `session-cut` is `cutweight-cut`, and `word-diet` plus
+`think-light` merged into the `cutweight` dial. Old folder names no longer
+update; reinstall to get the new ones.
 
 ## Troubleshooting
 
@@ -96,20 +100,18 @@ cp -R skills/weigh-in ~/.claude/skills/
 
 ```text
 skills/
-  session-cut/
+  cutweight/
     SKILL.md
-  skill-diet/
+  cutweight-cut/
     SKILL.md
-  think-light/
+  cutweight-diet/
     SKILL.md
-  weigh-in/
-    SKILL.md
-  word-diet/
+  cutweight-weigh/
     SKILL.md
 ```
 
 Flat by design.
 
-cutweight's own weight: the five skill descriptions add roughly 700
+cutweight's own weight: the four skill descriptions add roughly 320
 always-on tokens to your setup. A diet that hides its own calories is not
 a diet.

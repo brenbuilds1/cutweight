@@ -1,5 +1,5 @@
 ---
-name: weigh-in
+name: cutweight-weigh
 description: >
   Weigh an agent setup and print a fight-card receipt. Use when asked to weigh
   in, weigh my agent, check my agent's weight or token overhead, or compare
@@ -11,13 +11,13 @@ description: >
 
 # Weigh-In
 
-The scale for your agent. skill-diet finds what to cut; weigh-in tells you
+The scale for your agent. cutweight-diet finds what to cut; cutweight-weigh tells you
 what you weigh, before the cut and after it. Step on the scale first, cut,
 step on it again.
 
 ## Method
 
-1. Measure the always-on bill exactly as skill-diet does: installed skills
+1. Measure the always-on bill exactly as cutweight-diet does: installed skills
    (frontmatter name plus description each), memory files loaded at session
    start (CLAUDE.md, AGENTS.md, local variants, imports), MCP tool schemas
    (eager-loaded only; a server you cannot enumerate is unknown, never zero).

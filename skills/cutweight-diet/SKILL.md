@@ -1,5 +1,5 @@
 ---
-name: skill-diet
+name: cutweight-diet
 description: >
   Audit the always-on context cost of an agent setup: installed skills, memory
   files (CLAUDE.md, AGENTS.md), and MCP tool schemas. Use when asked to audit,

@@ -1,5 +1,5 @@
 ---
-name: session-cut
+name: cutweight-cut
 description: >
   Session-weight hygiene. Use when sessions run long, when an agent gets
   slower or starts forgetting mid-session, when deciding between /clear,

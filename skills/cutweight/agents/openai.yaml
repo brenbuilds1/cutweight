@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cutweight"
+  short_description: "The dial for an agent's token weight: light, full, ultra, off."
+  default_prompt: "Use Cutweight at full: answer like a cornerman between rounds, zero filler, only what changes the next round, keep commands, code, file paths, and error strings exact; cap thinking on light tasks only after verifying quality held; check live sources before calling facts that may have changed."
