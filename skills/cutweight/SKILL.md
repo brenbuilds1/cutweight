@@ -17,9 +17,14 @@ reply and the thinking behind it.
 /cutweight light | full | ultra | off
 ```
 
-Default `full`. Off only on `/cutweight off`, `stop cutweight`, or
-`normal mode`. Active every response; no drift back to filler after many
-turns. Still active if unsure.
+Default `full`. `/cutweight` alone reports the current level and names
+the three tools (`cutweight-weigh`, `cutweight-diet`, `cutweight-cut`).
+Off only on `/cutweight off`, `stop cutweight`, or `normal mode`. Active
+every response; no drift back to filler after many turns. Still active
+if unsure. To make a level the default for every session, put one line
+in the project's CLAUDE.md or AGENTS.md: `cutweight: full`. When you
+spawn a subagent, put the current level in its prompt; it does not
+inherit yours.
 
 | level | reply | thinking |
 |---|---|---|

@@ -23,7 +23,9 @@ billed on every message: the words in the reply and the thinking behind
 it. Answers like a cornerman between rounds, keeps commands, code, file paths,
 and error strings exact, caps thinking on light tasks only after verifying
 quality held, and checks the live round before calling a fact that may
-have changed.
+have changed. Set a default for every session with one line in CLAUDE.md
+or AGENTS.md (`cutweight: full`); pass the level to subagents in their
+prompt. No hooks, no config file, nothing to install.
 
 Path: [`skills/cutweight/SKILL.md`](./skills/cutweight/SKILL.md)
 
